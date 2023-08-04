@@ -40,6 +40,17 @@ app.post('/submit', upload.fields([
     { name: 'govt_id_back', maxCount: 1 },
     { name: 'profile_picture', maxCount: 1 }
   ]), (req, res) => {
+
+     const {
+    name,
+    email,
+    company_name,
+    mobile_number,
+    password,
+    confirm_password,
+    address,
+    gender
+  } = req.body;
     const requiredFields = [
       'name', 'email', 'company_name', 'mobile_number',
       'password', 'confirm_password', 'address', 'gender'
