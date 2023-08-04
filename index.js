@@ -83,5 +83,5 @@ app.post('/submit', upload.fields([
   });
 
   app.listen(PORT, () => {
-    console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port - 3000`);
   });
