@@ -32,6 +32,8 @@ const storage = multer.diskStorage({
   }
 });
 
+const upload = multer({ storage: storage });
+
 // Inside the route handler
 app.post('/submit', upload.fields([
     { name: 'govt_id_front', maxCount: 1 },
